@@ -56,7 +56,7 @@ public class Main {
      * @param args аргументи командного рядка
      * @return кількість чисел N
      */
-    public static int getInput(String[] args){
+    public static int getNumberOfLucas(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введіть кількість чисел Люка (N): ");
         int N = scanner.nextInt();
@@ -109,7 +109,7 @@ public class Main {
      */
 
     public static void main (String[] args){
-        int N = getInput(args);
+        int N = getNumberOfLucas(args);
         LucasNumber[] lucasNumbers = generateLucasNumbers(N);
         checkAndPrintResults(lucasNumbers);
     }
